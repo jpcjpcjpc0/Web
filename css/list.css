@@ -1,0 +1,196 @@
+/* 列表页秒杀模块 */
+.nav {
+    overflow: hidden;
+}
+
+.sk {
+    position: absolute;
+    top: 40px;
+    left: 190px;
+    border-left: 1px solid #c81523;
+    padding: 3px 0 3px 14px;
+}
+
+.sk_list {
+    float: left;
+}
+
+.sk_list ul li {
+    float: left;
+}
+
+.sk_list ul li a {
+    display: block;
+    line-height: 47px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1f1f1f;
+}
+
+.sk_list ul li a:hover {
+    color: #bf1619;
+}
+
+.sk_con {
+    float: right;
+}
+
+.sk_con ul li {
+    float: left;
+}
+
+.sk_con ul li a {
+    display: block;
+    line-height: 50px;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.sk_con ul li:last-child a::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+}
+
+.sk_bd ul {
+    /* 清除浮动，不然父元素没给高度，li浮动会让下面的内容挤上来 */
+    /* 或者给ul加上class="clearfix" */
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.sk_goods {
+    position: relative;
+    float: left;
+    margin: 0 13px 15px 0;
+    overflow: hidden;
+    width: 288px;
+    height: 458px;
+    border: 1px solid transparent;
+}
+
+.sk_goods:nth-child(4n) {
+    margin-right: 0;
+}
+
+.sk_goods:hover {
+    /* 如果不给li加上1px的透明颜色的边框，这个效果会抖动 */
+    border: 1px solid #c81523;
+}
+
+.sk_goods_title {
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+    padding: 10px;
+    line-height: 22px;
+}
+
+.sk_goods_price {
+    padding: 0 10px;
+    color: #e60012;
+}
+
+.sk_goods_price em {
+    font-size: 22px;
+}
+
+.sk_goods_price del {
+    color: #a4a4a4;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.sk_goods_progress {
+    padding: 0 10px;
+}
+
+.bar {
+    display: inline-block;
+    vertical-align: middle;
+    width: 130px;
+    height: 12px;
+    border: 1px solid #b1191a;
+    margin: 0 5px;
+    /* 小圆角高度的一半 */
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.bar_in {
+    width: 87%;
+    height: 10px;
+    background-color: #ed282e;
+}
+
+.sk_goods_progress em,
+.sk_goods_progress i {
+    color: #f24349;
+}
+
+.sk_goods_buy {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #b1191a;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.sk_goods_buy:hover {
+    color: #fff;
+}
+
+/* 列表分页 */
+.page {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.page_num a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+}
+
+.page_num a:first-child,
+.page_num a:last-child {
+    width: 83px;
+}
+
+.page_num .dotted,
+.page_num .current {
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+.page_skip {
+    margin-left: 24px;
+}
+
+.page_skip input {
+    vertical-align: middle;
+    width: 46px;
+    height: 36px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.page_skip input:focus {
+    border: 1px solid rgb(73, 200, 250);
+}
+
+.page_skip button {
+    vertical-align: middle;
+    width: 54px;
+    height: 36px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+}

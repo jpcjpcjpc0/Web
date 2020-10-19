@@ -1,0 +1,355 @@
+/* 声明字体图标 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+        url('../fonts/icomoon.woff?tomleg') format('woff'),
+        url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* 版心 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.style_red {
+    color: #c81623;
+}
+
+/* 快捷导航模块 start*/
+.shortcut {
+    height: 31px;
+    line-height: 31px;
+    background-color: #f1f1f1;
+}
+
+.shortcut ul li {
+    float: left;
+}
+
+.first_tab>li {
+    position: relative;
+}
+
+.shortcut .first_tab>li:nth-child(2n) {
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 9px 15px 0;
+}
+
+.arrow-icon::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+    margin-left: 6px;
+}
+
+.second_tab {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: -8px;
+    background-color: #f1f1f1;
+    z-index: 9999;
+}
+
+.first_tab .second_tab li {
+    float: none;
+    /* display: none; */
+    width: 80px;
+    text-align: center;
+    border-bottom: 1px solid #ededed;
+}
+
+
+
+/* 快捷导航模块 end*/
+
+/* header 头部制作 start */
+.header {
+    height: 105px;
+    position: relative;
+}
+
+.logo {
+    width: 171px;
+    height: 61px;
+    position: absolute;
+    top: 25px;
+}
+
+.logo a {
+    display: block;
+    width: 171px;
+    height: 61px;
+    background: url(../images/logo.png) no-repeat;
+    /* font-size: 0;  京东的做法 */
+    /*淘宝的做法*/
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.search {
+    width: 538px;
+    height: 36px;
+    border: 2px solid #b1191a;
+    position: absolute;
+    left: 346px;
+    top: 25px;
+}
+
+.search input {
+    float: left;
+    width: 454px;
+    height: 32px;
+    padding-left: 10px;
+}
+
+.search button {
+    float: left;
+    width: 80px;
+    height: 32px;
+    background-color: #b1191a;
+    font-size: 16px;
+    color: #fff;
+}
+
+.hotwords {
+    position: absolute;
+    top: 66px;
+    left: 346px;
+}
+
+.hotwords a {
+    margin: 0 10px;
+}
+
+.shopcar {
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+    position: absolute;
+    top: 25px;
+    right: 60px;
+}
+
+.shopcar::before {
+    content: '\e93a';
+    font-family: 'icomoon';
+    margin-right: 5px;
+    color: #b1191a;
+}
+
+.shopcar::after {
+    content: '\e920';
+    font-family: 'icomoon';
+    margin-left: 10px;
+}
+
+.count {
+    position: absolute;
+    top: -5px;
+    left: 95px;
+    height: 14px;
+    line-height: 14px;
+    color: #fff;
+    background-color: #e60012;
+    padding: 0 5px;
+    border-radius: 7px 7px 7px 0;
+}
+
+/* header 头部制作 end */
+
+/* nav模块制作 start */
+.nav {
+    height: 47px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.nav .dropdown {
+    float: left;
+    width: 210px;
+    height: 45px;
+    background-color: #b1191a;
+}
+
+.dropdown .dt {
+    width: 100%;
+    height: 100%;
+    line-height: 45px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+}
+
+.dropdown .dd {
+    /* display: none; */
+    width: 210px;
+    height: 465px;
+    background-color: #c81623;
+    margin-top: 2px;
+}
+
+.dd li {
+    height: 31px;
+    line-height: 31px;
+    margin-left: 2px;
+    padding-left: 10px;
+    color: #fff;
+    transition: padding-left .5s;
+}
+
+.dd li::after {
+    content: '\e920';
+    font-family: 'icomoon';
+    float: right;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.dd li:hover {
+    background-color: #fff;
+    color: #c81623;
+    padding-left: 20px;
+}
+
+.dd li:hover a {
+    color: #c81623;
+}
+
+.dd li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.nav .navitems {
+    float: left;
+}
+
+.navitems li {
+    float: left;
+}
+
+.navitems li a {
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 25px;
+}
+
+/* nav模块制作 end */
+
+/* footer底部模块制作 start */
+.footer {
+    height: 415px;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+    margin-top: 10px;
+}
+
+.mod_service {
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mod_service li {
+    width: 240px;
+    height: 50px;
+    float: left;
+    padding-left: 35px;
+}
+
+.mod_service li h5 {
+    width: 50px;
+    height: 50px;
+    background: url(../images/icons.png) no-repeat -252px -2px;
+    float: left;
+    margin-right: 8px;
+}
+
+.mod_service li:nth-child(2) h5 {
+    background: url(../images/icons.png) no-repeat -254px -54px;
+}
+
+.mod_service li:nth-child(3) h5 {
+    background: url(../images/icons.png) no-repeat -256px -106px;
+}
+
+.mod_service li:nth-child(4) h5 {
+    background: url(../images/icons.png) no-repeat -258px -156px;
+}
+
+.mod_service li:nth-child(5) h5 {
+    background: url(../images/icons.png) no-repeat -256px -208px;
+}
+
+.service_txt h4 {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.service_txt p {
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.mod_help {
+    height: 185px;
+    border-bottom: 1px solid #ccc;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.mod_help dl {
+    float: left;
+    width: 200px;
+}
+
+.mod_help dl:last-child {
+    width: 90px;
+    text-align: center;
+}
+
+.mod_help dl dt {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.mod_help dl dd {
+    margin-bottom: 3px;
+}
+
+.mod_copyright {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.mod_copyright .links {
+    margin-bottom: 15px;
+}
+
+.mod_copyright .links a {
+    margin: 0 3px;
+}
+
+.mod_copyright .copyright {
+    line-height: 20px;
+}
+
+/* footer底部模块制作 end */

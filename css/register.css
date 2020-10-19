@@ -1,0 +1,156 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 头部 */
+header {
+    height: 84px;
+    border-bottom: 2px solid #af191b;
+}
+
+.logo {
+    padding-top: 18px;
+}
+
+
+/* 主体 */
+.registerarea {
+    height: 522px;
+    border: 1px solid #e0e0e0;
+    margin-top: 20px;
+}
+
+.registerarea h3 {
+    height: 42px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #ececec;
+    line-height: 42px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.login {
+    float: right;
+    font-size: 14px;
+}
+
+.login a {
+    color: #c81523;
+}
+
+.reg_form {
+    width: 600px;
+    margin: 50px auto 0;
+}
+
+.reg_form ul li {
+    margin-bottom: 20px;
+}
+
+.reg_form ul li label {
+    /* 转换成行内块元素，给label宽度，不然无法让文字右对齐，转成块级元素会让后面两个盒子掉下去 */
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.reg_form ul li input[type='text'],
+.reg_form ul li input[type='password'] {
+    width: 242px;
+    height: 37px;
+    border: 1px solid #999;
+}
+
+.error {
+    color: #c81523;
+    margin-left: 10px;
+}
+
+.error_icon,
+.success_icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/error.png) no-repeat;
+}
+
+.success {
+    color: #40b73f;
+    margin-left: 10px;
+}
+
+.success_icon {
+    background: url(../images/success.png) no-repeat;
+}
+
+.safe {
+    padding-left: 166px;
+    color: #bcbcbc;
+}
+
+.safe em {
+    padding: 0 12px;
+    color: #fcfffa;
+}
+
+.bai {
+    background-color: rgb(187, 186, 186);
+}
+
+.ruo {
+    background-color: #dd1112;
+}
+
+.zhong {
+    background-color: #4abe41;
+}
+
+.qiang {
+    background-color: #f79100;
+}
+
+.agree {
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+.agree input {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.agree a {
+    color: #1d9fd0;
+}
+
+.over {
+    width: 200px;
+    height: 34px;
+    background-color: #c81622;
+    color: #fbffff;
+    font-size: 14px;
+    margin: 30px 110px;
+    cursor: pointer;
+}
+
+
+/* 尾部 */
+footer {
+    height: 120px;
+    text-align: center;
+}
+
+.links {
+    margin-top: 20px;
+    height: 30px;
+}
+
+.copyright {
+    line-height: 20px;
+}

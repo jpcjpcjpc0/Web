@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 注册页面比较隐私，为了保护用户信息，我们不需要对当前页面做SEO优化 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人注册</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/register.css">
+
+    <script src="js/register.js"></script>
+</head>
+
+<body>
+    <div class="w">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+        </header>
+        <div class="registerarea">
+            <h3>
+                注册新用户
+                <div class="login">我有账号，去
+                    <a href="#">登录</a>
+                </div>
+            </h3>
+            <div class="reg_form">
+                <form action="javascript:;" method="post">
+                    <ul>
+                        <li>
+                            <label for="shouji">手机号：</label>
+                            <input type="text" name="" id="shouji">
+                            <span class="error" id="message_shouji" style="display: none;"><i class="error_icon"
+                                    id="icon_shouji"></i>
+                                手机号码格式不正确，请重新输入</span>
+                        </li>
+                        <li>
+                            <label for="yanzheng">短信验证码：</label>
+                            <input type="text" name="" id="yanzheng">
+                            <span class="success" id="message_yanzheng" style="display: none"><i
+                                    class="success_icon"></i>
+                                短信验证码输入正确</span>
+                        </li>
+                        <li>
+                            <label for="mima">登录密码：</label>
+                            <input type="password" name="" id="mima">
+                            <span class="error" id="message_mima" style="display: none;"><i class="error_icon"></i>
+                                密码强度太弱</span>
+                        </li>
+                        <!-- 密码安全程度 -->
+                        <li class="safe">
+                            安全程度
+                            <em class="bai">弱</em>
+                            <em class="bai">中</em>
+                            <em class="bai">强</em>
+                        </li>
+                        <li>
+                            <label for="queren">确认密码：</label>
+                            <input type="password" name="" id="queren">
+                            <span class="error" id="message_queren" style="display: none;"><i class="error_icon"></i>
+                                两次密码输入不一致</span>
+                        </li>
+                        <!-- 同意注册 -->
+                        <li class="agree">
+                            <input type="checkbox" name="" id="">
+                            同意协议并注册
+                            <a href="#">《知果果用户协议》</a>
+                        </li>
+                        <!-- 完成注册 -->
+                        <li>
+                            <input type="submit" value="完成注册" class="over">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="links">
+                <a href="#">关于我们</a> | <a href="#">联系我们</a> | <a href="#">联系客服</a> | <a href="#">商家入驻</a> | <a
+                    href="#">营销中心</a> | <a href="#">手机品优购</a> | <a href="#">友情链接</a> | <a href="#">销售联盟</a> | <a
+                    href="#">品优购社区</a> | <a href="#">品优购公益</a> | <a href="#">English Site</a> | <a href="#">Contact
+                    U</a>
+            </div>
+            <div class="copyright">
+                地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn <br>
+                京ICP备08001421号京公网安备110108007702
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
